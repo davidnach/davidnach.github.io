@@ -33,411 +33,368 @@
 
 <!-- Scrollspy in body tag -->
 <body data-spy="scroll" data-target=".navbar" data-offset="0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbarNav">
+        <!-- Container -->
+        <div class="container">
+            <!-- Name/Image for Navbar Brand on the top left -->
+            <a class="navbar-brand" href="#">David</a>
+            <!-- Button for responsive design when screen width reduces -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- List of sections present in the site -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div><!-- End Navbar-collapse list -->
+        </div><!-- End  Container -->
+    </nav>
+    <!-- End Navbar -->
+    <!-- Introduction section -->
+    <header class="header">
+        <div id="intro">
+            <!-- Container -->
+            <div class="container">
+                <!-- Row 1 -->
+                <div class="row">
+                    <!-- Column for content -->
+                    <div class="col-md-12">
 
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg fixed-top" id="navbarNav">
+                        <!-- animated and zoomIn classes for animation -->
+                        <div class="text-center animated zoomIn">
+                            <!-- Icon for graduation cap on user -->
+                            <i class="fas fa-user-graduate"></i>
+                            <!-- Name on opening page -->
+                            <h1>David Nachmanson</h1>
+                            <!-- Occupations -->
+                            Software Developer <i class="fas fa-cogs"></i> |
+                            <br><br>
+                            <!-- Icon for down arrow -->
+                            <a href="#about"><i class="fas fa-angle-double-down"></i></a>
+                        </div><!-- End animations -->
+                    </div><!-- End Column -->
+                </div><!-- End Row 1 -->
+            </div><!-- End Container -->
+        </div><!-- End Intro -->
+    </header>
+    <!-- End Introductuion section -->
+    <!-- About section -->
+    <section id="about">
+        <!-- Container -->
+        <div class="container">
+            <!-- Section Heading with Horizontal line below it -->
+            <h1 class="text-center section_head">About Me</h1>
+            <hr style="border-top: 3px solid #ffc107; width: 400px; margin-bottom: 50px;">
+            <!-- Left hand side Information card -->
+            <!-- Row 1 -->
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-md-4" id="main">
+                    <!-- Card start -->
+                    <div class="card" style="width: 100%;">
+                        <!-- Profile image -->
+                        <img class="card-img-top" src="assets/img2.jpg" alt="Card image cap">
 
-		<!-- Container -->
-		<div class="container">
+                        <!-- card body start -->
+                        <div class="card-body" style="padding-bottom: 24px;">
+                            <!-- Name -->
+                            <h2 class="card-title">David Nachmanson</h2><br>
+                            <!-- Job, Location, E-Mail -->
+                            <p class="card-text">
+                                <i class="fas fa-briefcase"></i>Developer<br>
+                                <i class="fas fa-home"></i> Redmond, Washington<br>
+                                <i class="fas fa-envelope"></i> davidnachson@gmail.com<br>
+                            </p>
+                            <hr>
+                            <!-- Skills -->
+                            <div class="card-text">
+                                <h3><i class="fas fa-asterisk"></i>Skills</h3>
+                                <h5>Proficient : </h5>
+                                <p>Java, C</p>
+                                <h5>Familiar : </h5>
+                                <p>Javascript, Python, SQL</p>
+                            </div>
+                            <hr>
+                        </div><!-- Card Body End -->
+                    </div><!-- Card End -->
+                </div><!-- Column 1 End -->
+                <!-- Left hand Information card End -->
+                <!-- Experience Card
+                        List of past and current employers -->
+                <!-- Column 2 -->
+                <div class="col-md-8">
+                    <!-- Row 2 -->
+                    <div class="row" id="exp">
+                        <!-- Exp Card Start -->
+                        <div class="card" style="width: 100%;">
+                            <!-- Card Body start -->
+                            <div class="card-body">
+                                <!-- Card Title - Experience -->
+                                <h2 class="card-title"><i class="fas fa-suitcase"></i> Summary</h2><br>
+                                <!-- Current Employer -->
+                                <div class="card-text">
 
-			<!-- Name/Image for Navbar Brand on the top left -->
-		  	<a class="navbar-brand" href="#">David</a>
-
-		  	<!-- Button for responsive design when screen width reduces -->
-		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    	<span class="navbar-toggler-icon"></span>
-		  	</button>
-
-		  	<!-- List of sections present in the site -->
-		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    	<ul class="navbar-nav ml-auto">
-		     		<li class="nav-item">
-			        	<a class="nav-link" href="#intro">Home</a>
-			    	</li>
-			    	<li class="nav-item">
-			    	    <a class="nav-link" href="#about">About</a>
-			      	</li>
-				    <li class="nav-item">
-		        		<a class="nav-link" href="#projects">Projects</a>
-		      		</li>
-		      		<li class="nav-item">
-		        		<a class="nav-link" href="#contact">Contact</a>
-		      		</li>
-		    	</ul>
-		  	</div><!-- End Navbar-collapse list -->
-
-		</div><!-- End  Container -->
-	</nav>
-	<!-- End Navbar -->
+                                    <p>
+                                        Coding is fun, and i'm looking for a job/internship where i'm reminded of that everyday.
+                                        My background mainly involves development of stand-alone C and Java applications, and i have experience
+                                        with web applications,distributed computing, and database applications.In my spare time i like to workout, read, and hang with buds!
+                                    </p>
+                                </div>
 
 
-	<!-- Introduction section -->
-	<header class="header">
-		<div id="intro">
-			<!-- Container -->
-			<div class="container">
-				<!-- Row 1 -->
-				<div class="row">
-					<!-- Column for content -->
-					<div class="col-md-12">
-						
-						<!-- animated and zoomIn classes for animation -->
-						<div class="text-center animated zoomIn">
-							<!-- Icon for graduation cap on user -->
-							<i class="fas fa-user-graduate"></i>
-							<!-- Name on opening page -->
-							<h1>David Nachmanson</h1>
-							<!-- Occupations -->
-							 Computer Science student <i class="fas fa-cogs"></i> |
-							<br><br>
-							<!-- Icon for down arrow -->
-							<a href="#about"><i class="fas fa-angle-double-down"></i></a>
-						</div><!-- End animations -->
+                                <!-- Add more Experiences here -->
+                            </div><!-- Card Body End -->
+                        </div><!-- Exp Card End -->
+                    </div><!-- Row 2 End -->
+                    <!-- Experience End -->
+                    <!-- Education Card
+                            List of past and (if applicable)current Education Institutions enrolled in, presented in Most Recent order-->
+                    <!-- Row 3 -->
+                    <div class="row" id="edu">
+                        <!-- Card start -->
+                        <div class="card" style="width: 100%;">
+                            <!-- Card Body start -->
+                            <div class="card-body">
+                                <!-- Card Title - Education -->
+                                <h2 class="card-title"><i class="fas fa-graduation-cap"></i> Education</h2><br>
+                                <!-- Institution 1 -->
+                                <div class="card-text">
+                                    <!-- Name of Institution -->
+                                    <h5><b>North Carolina State University</b></h5>
+                                    <!-- Duration of Enrollment -->
+                                    <h6 style="padding: 10px 0px;"><i class="fas fa-calendar-alt"></i> August 2019 - December 2020</h6>
+                                    <!-- Degree/Certification persued -->
+                                    <p><b>Masters of Science</b> in <i>Computer Science and Engineering</i></p>
+                                </div>
+                                <hr>
+                                <div class="card-text">
+                                    <!-- Name of Institution -->
+                                    <h5><b>Western Washington University</b></h5>
+                                    <!-- Duration of Enrollment -->
+                                    <h6 style="padding: 10px 0px;"><i class="fas fa-calendar-alt"></i> February 2016 - June 2018</h6>
+                                    <!-- Degree/Certification persued -->
+                                    <p><b>Bachelors of Engineering</b> in <i>Computer Science and Engineering</i></p>
+                                </div>
+                                <hr />
 
-					</div><!-- End Column -->
-				</div><!-- End Row 1 -->
-			</div><!-- End Container -->
-		</div><!-- End Intro -->
-	</header>
-	<!-- End Introductuion section -->
-	
 
-	<!-- About section -->
-	<section id="about">
+                                <!-- Add more institutions here -->
+                            </div><!-- Card Body End -->
+                        </div><!-- Card End -->
+                    </div><!-- Row 3 End -->
+                    <!-- Education End -->
+                </div><!-- Column 2 End -->
+            </div><!-- Row 1 End -->
+        </div><!-- Container End -->
+    </section>
+    <!-- End About Section -->
+    <!-- Projects Section -->
+    <section id="projects">
+        <!-- Container -->
+        <div class="container">
+            <!-- Section Heading with Horizontal line below it -->
+            <h1 class="text-center section_head">Projects</h1>
+            <hr style="border-top: 3px solid #ffc107; width: 400px; margin-bottom: 50px;">
+            <!-- Row 1 -->
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-md-12">
+                    <!-- Card start -->
+                    <div class="card" style="width: 100%;">
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <!-- Row 2 -->
+                            <!-- Project 1. Copy from here to add more projects -->
+                            <div class="row">
+                                <!-- Column 2 -->
+                                <!-- Project Title with technologies used -->
+                                <div class="col-md-4">
+                                    <h1 class="text-center" style="padding-bottom: 30px;">Protein Cavity Explorer</h1>
+                                    <h4>Technologies/Libraries Used :</h4>
+                                    <p> Typescript,Angular 5,Node.js </p>
+                                </div><!-- Column 2 End -->
+                                <!-- Column 3 -->
+                                <!-- Project Description -->
+                                <div class="col-md-8">
+                                    <p class="card-text">
+                                        A web app used for exploring the properties of protein cavities. It allows users to enter an RCSB recognized protein and explore different properties of that protein such as area of pockets and amino acid counts by pocket.
+                                        The app was developed under the guidance of Dr. Jagodzinski and with the contribution of my former classmates: Daniel Fong, Seth Kvam, and Helaina Curtis. The app is still under production but <a href=" https://drive.google.com/file/d/1yVL-Uv2HQLxz82OZwzvUVPS-xj_r8rIL/view">you can still check it out</a>.
+                                    </p>
+                                </div><!-- Column 3 End -->
+                            </div><!-- Row 2 End -->
+                            <hr>
 
-		<!-- Container -->
-		<div class="container">
+                            <div class="row">
+                                <!-- Column 2 -->
+                                <!-- Project Title with technologies used -->
+                                <div class="col-md-4">
+                                    <h1 class="text-center" style="padding-bottom: 30px;">Protein Cavity Explorer</h1>
+                                    <h4>Technologies/Libraries Used :</h4>
+                                    <p> Typescript,Angular 5,Node.js </p>
+                                </div><!-- Column 2 End -->
+                                <!-- Column 3 -->
+                                <!-- Project Description -->
+                                <div class="col-md-8">
+                                    <p class="card-text">
+                                        A web app used for exploring the properties of protein cavities. It allows users to enter an RCSB recognized protein and explore different properties of that protein such as area of pockets and amino acid counts by pocket.
+                                        The app was developed under the guidance of Dr. Jagodzinski and with the contribution of my former classmates: Daniel Fong, Seth Kvam, and Helaina Curtis. The app is still under production but <a href=" https://drive.google.com/file/d/1yVL-Uv2HQLxz82OZwzvUVPS-xj_r8rIL/view">you can still check it out</a>.
+                                    </p>
+                                </div><!-- Column 3 End -->
+                            </div><!-- Row 2 End -->
+                            <!-- End Project 1 -->
+                            <!-- Add more projects here -->
+                        </div><!-- Card Body End -->
+                    </div><!-- Card End -->
+                </div><!-- Column 1 End -->
+            </div><!-- Row 1 End -->
+        </div><!-- Container End -->
+    </section>
+    <!-- End Projects section -->
+    <!-- Contact section -->
+    <section id="contact">
+        <!-- Container -->
+        <div class="container">
+            <!-- Heading -->
+            <h1 class="text-center section_head">Contact Me!</h1>
+            <hr style="border-top: 3px solid #ffc107; width: 400px; margin-bottom: 50px;">
 
-			<!-- Section Heading with Horizontal line below it -->
-			<h1 class="text-center section_head">About Me</h1>
-			<hr style="border-top: 3px solid #ffc107; width: 400px; margin-bottom: 50px;">
+            <!-- Card start -->
+            <div class="card">
+                <!-- Row 1 -->
+                <div class="row">
+                    <!-- Left column with form -->
+                    <div class="col-md-8">
+                        <!-- Card 1 Body start -->
+                        <div class="card-body">
+                            <h3><i class="fas fa-envelope-open"></i> Get in touch!</h3>
+                            <!-- Form start -->
+                            <form id="gform" method="POST" onsubmit="yourJsFunction();return false"  class="pure-form pure-form-stacked" data-email="from_email@example.com"
+                                  action="https://script.google.com/macros/s/AKfycbxSy49Tw6uJmK9ZbhuWGdSQmVPSH466ClUnZlyoU46XO6ufPMaT/exec">
+                                <!-- Row 2 -->
+                                <div class="row">
+                                    <!-- Customer name -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Customer E-mail -->
+                                <!-- Row 3 -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Your E-mail Address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row 3 end -->
+                                <!-- Customer Message -->
+                                <!-- Row 4 -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea type="text" class="form-control" id="message" name="message" rows="3" placeholder="Your Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row 4 End -->
+                                <!-- Submit Button -->
+                                <button type="submit" class="btn btn-primary mb-2">Send</button>
+                              
+                            </form><!-- Form end -->
+                            <div style="display:none;" id="thankyou_message">
+                                <h2>
+                                    <em>Submitted!</em> 
+                                </h2>
+                            </div>
+                        </div><!-- Card 1 body end -->
+                    </div><!-- Left column end -->
+                    <!-- Column 2 start -->
+                    <div class="col-md-4">
+                        <!-- Card 2 start -->
+                        <div class="card">
+                            <!-- Card 2 Title -->
+                            <div class="card-title">
+                                <h3 class="text-center">Contact Information</h3>
+                            </div>
+                            <!-- Card 2 body start -->
+                            <div class="card-body">
+                                <!-- Location and E-mail Address -->
+                                <ul style="list-style-type:none">
+                                    <li><i class="fas fa-map-marker" style="padding-right: 10%;"></i> Redmond, Washington</li>
+                                    <li><i class="fas fa-envelope" style="padding-right: 10%;"></i>davidnachson@gmail.com</li>
+                                </ul>
+                                <!-- Horizontal Line -->
+                                <hr style="border-top: 3px solid #ffffff; width: 100%; margin-bottom: 25px;">
+                                <!-- Icons and links to Google+, LinkedIn, Github -->
+                                <ul class="list-inline text-center list-unstyled">
 
-			<!-- Left hand side Information card -->
-			<!-- Row 1 -->
-			<div class="row">
-				<!-- Column 1 -->
-				<div class="col-md-4" id="main">
-					<!-- Card start -->
-					<div class="card" style="width: 100%;">
-						<!-- Profile image -->
-						<img class="card-img-top" src="assets/img2.jpg" alt="Card image cap">
-						
-						<!-- card body start -->
-					  	<div class="card-body" style="padding-bottom: 24px;">
-					  		<!-- Name -->
-					    	<h2 class="card-title">Mihier RoyChaudhury</h2><br>
-					    	<!-- Job, Location, E-Mail -->
-					    	<p class="card-text">
-					    		<i class="fas fa-briefcase"></i> Developer<br>
-					    		<i class="fas fa-home"></i> Bangalore, Karnataka, India<br>
-					    		<i class="fas fa-envelope"></i> mihier.roy@gmail.com<br>
-					    	</p>
-					    	<hr>
-					    	<!-- Skills -->
-					    	<div class="card-text">
-						    	<h3><i class="fas fa-asterisk"></i>Skills</h3>
-						    	<h5>Proficient : </h5>
-						    	<p>Python, C/C++, HTML/CSS, JavaScript</p>
-						    	<h5>Familiar : </h5>
-						    	<p>Java, PHP, SQL</p>
-						    </div>
-						    <hr>
-						</div><!-- Card Body End -->
+                                    <!-- LinkedIn -->
+                                    <li class="list-inline-item">
+                                        <a href="https://www.linkedin.com/in/david-nachmanson-81193237/">
+                                            <i class="fab fa-linkedin" style="font-size: 2rem; padding: 0 30%; color: white"></i>
+                                        </a>
+                                    </li>
+                                    <!-- Github -->
+                                    <li class="list-inline-item">
+                                        <a href="https://github.com/davidnach">
+                                            <i class="fab fa-github" style="font-size: 2rem; color: white"></i>
+                                        </a>
+                                    </li>
+                                </ul><!-- Icons and Links End -->
+                            </div><!-- Card 2 Body End -->
+                        </div><!-- Card 2 End -->
+                    </div><!-- Column 2 End -->
+                </div><!-- Row 1 End -->
+            </div><!-- Card 1 End -->
+        </div><!-- Container End -->
+    </section>
+    <!-- Contact section end -->
+    <!-- Footer Section -->
+    <!--<footer>
+        <div class="container">
+            <hr style="border-top: 2px solid #ffc107; width: 100%; margin-bottom: 10px;">
+            <h5 class="text-center" style="color: #ffffff;">Maintained and Developed by Mihier RoyChaudhury</h5>
+        </div>
+    </footer> -->
+    <!-- Footer Section End -->
+    <!-- Particle effect canvas -->
+    <canvas class="background"></canvas>
+    <!-- Particle effect scripts -->
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    <script src="js/particles.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Particles.init({
+                selector: '.background'
+            });
+        };
 
-					</div><!-- Card End -->
-				</div><!-- Column 1 End -->
-				<!-- Left hand Information card End -->
+        function yourJsFunction() {
+            console.log("submitted");
+            var x = document.getElementById("thankyou_message");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 
-				<!-- Experience Card 
-						List of past and current employers -->
-				<!-- Column 2 -->
-				<div class="col-md-8">
-					<!-- Row 2 -->
-					<div class="row" id="exp">
-						<!-- Exp Card Start -->
-						<div class="card" style="width: 100%;">
-							<!-- Card Body start -->
-						  	<div class="card-body">
-						  		<!-- Card Title - Experience -->
-						    	<h2 class="card-title"><i class="fas fa-suitcase"></i> Experience</h2><br>
 
-						    	<!-- Current Employer -->
-						    	<div class="card-text">
-						    		<!-- Employer Name -->
-						    		<h5>Developer / Mercedes-Benz Research & Development India</h5>
-						    		<!-- Duartion of Employment -->
-						    		<h6><i class="fas fa-calendar-alt"></i> July 2018 - <span class="label success rounded">Current</span></h6>
-						    		<!-- Job Description -->
-						    		<p>
-						    			Work Work Work Work Work Work Work Work Work Work Work Work Work Work
-									</p>
-						    	</div>
-						    	<hr>
-
-						    	<!-- Past Employer -->
-						    	<div class="card-text">
-						    		<!-- Employer Name -->
-						    		<h5>Internship</h5>
-						    		<!-- Duration of Employment -->
-						    		<h6><i class="fas fa-calendar-alt"></i> July 2017 - January 2018</h6>
-						    		<!-- Job Description -->
-						    		<p>
-						    			Work Work Work Work Work Work Work Work Work Work Work Work Work Work
-									</p>
-						    	</div>
-						    	<hr>
-
-						    	<!-- Add more Experiences here -->
-
-						  	</div><!-- Card Body End -->
-						</div><!-- Exp Card End -->
-					</div><!-- Row 2 End -->
-					<!-- Experience End -->
-
-					<!-- Education Card 
-							List of past and (if applicable)current Education Institutions enrolled in, presented in Most Recent order-->
-					<!-- Row 3 -->
-					<div class="row" id="edu">
-						<!-- Card start -->
-						<div class="card" style="width: 100%;">
-							<!-- Card Body start -->
-						  	<div class="card-body">
-						  		<!-- Card Title - Education -->
-						    	<h2 class="card-title"><i class="fas fa-graduation-cap"></i> Education</h2><br>
-
-						    	<!-- Institution 1 -->
-						    	<div class="card-text">
-						    		<!-- Name of Institution -->
-						    		<h5><b>PESIT Bangalore South Campus</b></h5>
-						    		<!-- Duration of Enrollment -->
-						    		<h6 style="padding: 10px 0px;"><i class="fas fa-calendar-alt"></i> August 2014 - July 2018</h6>
-						    		<!-- Degree/Certification persued -->
-						    		<p><b>Bachelors of Engineering</b> in <i>Computer Science and Engineering</i></p>
-						    	</div>
-						    	<hr>
-
-						    	<!-- Institution 2 -->
-						    	<div class="card-text">
-						    		<!-- Name of Institution -->
-						    		<h5><b>Bethany Junior College</b></h5>
-						    		<!-- Duration of Enrollment -->
-						    		<h6 style="padding: 10px 0px;"><i class="fas fa-calendar-alt"></i> June 2012 - March 2014</h6>
-						    		<!-- Degree/Certification persued -->
-						    		<p><b>11th & 12th Grade</b> under <i>ISC Board</i></p>
-						    	</div>
-						    	<hr>
-
-						    	<!-- Institution 3 -->
-						    	<div class="card-text">
-						    		<!-- Name of Institution -->
-						    		<h5><b>Bethany High School</b></h5>
-						    		<!-- Duration of Enrollment -->
-						    		<h6 style="padding: 10px 0px;"><i class="fas fa-calendar-alt"></i> August 2000 - July 2012</h6>
-						    		<!-- Degree/Certification persued -->
-						    		<p><b>10th Grade</b> under <i>ICSE Board</i></p>
-						    	</div>
-						    	<hr>
-
-						    	<!-- Add more institutions here -->
-
-						  	</div><!-- Card Body End -->
-						</div><!-- Card End -->
-					</div><!-- Row 3 End -->
-					<!-- Education End -->
-
-				</div><!-- Column 2 End -->
-			</div><!-- Row 1 End -->
-		</div><!-- Container End -->
-	</section>
-	<!-- End About Section -->
-
-	<!-- Projects Section -->
-	<section id="projects">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Section Heading with Horizontal line below it -->
-			<h1 class="text-center section_head">Projects</h1>
-			<hr style="border-top: 3px solid #ffc107; width: 400px; margin-bottom: 50px;">
-
-			<!-- Row 1 -->
-			<div class="row">
-				<!-- Column 1 -->
-				<div class="col-md-12">
-					<!-- Card start -->
-					<div class="card" style="width: 100%;">
-						<!-- Card Body -->
-						<div class="card-body">
-
-							<!-- Row 2 -->
-							<!-- Project 1. Copy from here to add more projects -->
-							<div class="row">
-								<!-- Column 2 -->
-								<!-- Project Title with technologies used -->
-								<div class="col-md-4">
-									<h1 class="text-center" style="padding-bottom: 30px;">Sarcasm Detection</h1>
-									<h4>Technologies/Libraries Used :</h4>
-									<p> Python, NLTK, TextBlob, scikit-learn, numpy </p>
-								</div><!-- Column 2 End -->
-								<!-- Column 3 -->
-								<!-- Project Description -->
-								<div class="col-md-8">
-									<p class="card-text">
-										My Undergraduate college (PESIT Bangalore South Campus) has a <b>lecture recording system</b> in place. This system records the
-										contents of the lecture in an audio-video format along with a <b>transcript of the	audio</b>. The aim of this project is to <b>create a set of notes from the transcript</b> that contain only the important points of the topic and remove the non-essential classroom talk. In this project, my team and I have created a program which can <b>scan a given document for sarcasm and analogies, and extract them </b>. The project relies on <em>Natural Language Programming and Machine Learning</em> to train the machine to detect these automatically without human intervention. With this automated system in place, students may use the transcripts that are generated.
-									</p>
-								</div><!-- Column 3 End -->
-							</div><!-- Row 2 End -->
-							<hr>
-							<!-- End Project 1 -->
-
-							<!-- Add more projects here -->
-
-						</div><!-- Card Body End -->
-					</div><!-- Card End -->
-				</div><!-- Column 1 End -->
-			</div><!-- Row 1 End -->
-		</div><!-- Container End -->
-	</section>
-	<!-- End Projects section -->
-
-	<!-- Contact section -->
-	<section id="contact">
-		<!-- Container -->
-		<div class="container">
-			<!-- Heading -->
-			<h1 class="text-center section_head">Contact Me!</h1>
-			<hr style="border-top: 3px solid #ffc107; width: 400px; margin-bottom: 50px;">
-			
-			<!-- Card start -->
-			<div class="card">
-				<!-- Row 1 -->
-				<div class="row">
-					<!-- Left column with form -->
-					<div class="col-md-8">
-						<!-- Card 1 Body start -->
-						<div class="card-body">
-							<h3><i class="fas fa-envelope-open"></i> Get in touch!</h3>
-							<!-- Form start -->
-							<form>
-								<!-- Row 2 -->
-								<div class="row">
-
-									<!-- Customer name -->
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" id="form-contact-name" placeholder="Your Name">
-										</div>
-									</div>
-
-									<!-- Customer Phone Number -->
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" id="form-contact-phone" placeholder="Your Phone Number">
-										</div>
-									</div>
-								</div>
-								<!-- Row 2 end -->
-
-								<!-- Customer E-mail -->
-								<!-- Row 3 -->
-								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="email" class="form-control" id="form-contact-email" aria-describedby="emailHelp" placeholder="Your E-mail Address">
-										</div>
-									</div>
-								</div>
-								<!-- Row 3 end -->
-
-								<!-- Customer Message -->
-								<!-- Row 4 -->
-								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-										    <textarea type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
-										  </div>
-									</div>
-								</div>
-								<!-- Row 4 End -->
-
-								<!-- Submit Button -->
-								<button type="submit" class="btn btn-primary mb-2">Send</button>
-
-							</form><!-- Form end -->
-						</div><!-- Card 1 body end -->
-					</div><!-- Left column end -->
-
-					<!-- Column 2 start -->
-					<div class="col-md-4">
-						<!-- Card 2 start -->
-						<div class="card">
-							<!-- Card 2 Title -->
-							<div class="card-title">
-								<h3 class="text-center">Contact Information</h3>
-							</div>
-								<!-- Card 2 body start -->
-							<div class="card-body">
-
-								<!-- Location and E-mail Address -->
-								<ul style="list-style-type:none">
-									<li><i class="fas fa-map-marker" style="padding-right: 10%;"></i> Bangalore, India</li>
-								  	<li><i class="fas fa-envelope" style="padding-right: 10%;"></i>mihier.roy@gmail.com</li>
-								</ul>
-
-								<!-- Horizontal Line -->
-								<hr style="border-top: 3px solid #ffffff; width: 100%; margin-bottom: 25px;">
-
-								<!-- Icons and links to Google+, LinkedIn, Github -->
-								<ul class="list-inline text-center list-unstyled">
-									<!-- Google+ -->
-									<li class="list-inline-item">
-									 	<a href="https://plus.google.com/u/1/100039037735316927246">
-									 	    <i class="fab fa-google-plus-g" style="font-size: 2rem; color: white"></i>
-									 	</a>
-									</li>
-									<!-- LinkedIn -->
-									<li class="list-inline-item">
-									 	<a href="https://www.linkedin.com/in/mihier-roychaudhury/">
-									 	    <i class="fab fa-linkedin" style="font-size: 2rem; padding: 0 30%; color: white"></i>
-									 	</a>
-									</li>
-									<!-- Github -->
-									<li class="list-inline-item">
-									 	<a href="https://github.com/Mihier-Roy">
-									 	    <i class="fab fa-github" style="font-size: 2rem; color: white"></i>
-									 	</a>
-									</li>
-								</ul><!-- Icons and Links End -->
-							</div><!-- Card 2 Body End -->	
-						</div><!-- Card 2 End -->
-					</div><!-- Column 2 End -->
-				</div><!-- Row 1 End -->
-			</div><!-- Card 1 End -->
-		</div><!-- Container End -->
-	</section>
-	<!-- Contact section end -->
-
-	<!-- Footer Section -->
-	<footer>
-		<div class="container">
-			<hr style="border-top: 2px solid #ffc107; width: 100%; margin-bottom: 10px;">
-			<h5 class="text-center" style="color: #ffffff;">Maintained and Developed by Mihier RoyChaudhury</h5>
-		</div>
-	</footer>
-	<!-- Footer Section End -->
-
-	<!-- Particle effect canvas -->
-	<canvas class="background"></canvas>
-	<!-- Particle effect scripts -->
-	<script src="js/particles.js"></script>
-	<script type="text/javascript">
-		window.onload = function() {
-		  Particles.init({
-		    selector: '.background'
-		  });
-		};
-	</script>
 </body>
 </html>
