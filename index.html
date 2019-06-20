@@ -13,7 +13,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
 
 	<!-- PopperJS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -114,7 +114,7 @@
                             <h2 class="card-title">David Nachmanson</h2><br>
                             <!-- Job, Location, E-Mail -->
                             <p class="card-text">
-                                <i class="fas fa-briefcase"></i>Developer<br>
+                                <i class="fas fa-briefcase"></i>Computer Science Graduate<br>
                                 <i class="fas fa-home"></i> Redmond, Washington<br>
                                 <i class="fas fa-envelope"></i> davidnachson@gmail.com<br>
                             </p>
@@ -123,9 +123,9 @@
                             <div class="card-text">
                                 <h3><i class="fas fa-asterisk"></i>Skills</h3>
                                 <h5>Proficient : </h5>
-                                <p>Java, C</p>
+                                <p>Java, C, SQL, OOP</p>
                                 <h5>Familiar : </h5>
-                                <p>Javascript, Python, SQL</p>
+                                <p>JavaScript, Angular, R</p>
                             </div>
                             <hr>
                         </div><!-- Card Body End -->
@@ -148,11 +148,11 @@
                                 <div class="card-text">
 
                                     <p>
-               
+
                                         Recent graduate that's eager and motivated to start my professional career in software engineering.My background mainly involves development of stand-alone C and Java applications, but i have experience
                                         with web applications,distributed computing, and database applications. Looking forward to building quality relationships as well as learning new technologies and bolstering my programming skill.
-                                        In my spare time i like to workout, read, and spend time with friends and family.And i solve <a href="https://leetcode.com/davidnach/">coding puzzles sometimes!</a>
-</p>
+                                        In my spare time i like to workout, read, and spend time with friends and family.I enjoy solving <a href="https://leetcode.com/davidnach/">coding puzzles</a> as well.
+                                    </p>
                                 </div>
 
 
@@ -172,14 +172,6 @@
                                 <!-- Card Title - Education -->
                                 <h2 class="card-title"><i class="fas fa-graduation-cap"></i> Education</h2><br>
                                 <!-- Institution 1 -->
-                                <div class="card-text">
-                                    <!-- Name of Institution -->
-                                    <h5><b>North Carolina State University</b></h5>
-                                    <!-- Duration of Enrollment -->
-                                    <h6 style="padding: 10px 0px;"><i class="fas fa-calendar-alt"></i> August 2019 - December 2020</h6>
-                                    <!-- Degree/Certification persued -->
-                                    <p><b>Masters of Science</b> in <i>Computer Science and Engineering</i></p>
-                                </div>
                                 <hr>
                                 <div class="card-text">
                                     <!-- Name of Institution -->
@@ -190,6 +182,13 @@
                                     <p><b>Bachelors of Engineering</b> in <i>Computer Science and Engineering</i></p>
                                 </div>
                                 <hr />
+                                <div class="card-text">
+                                    <!-- Name of Institution -->
+                                    <h5><b>University Of Washington</b></h5>
+                                    <!-- Duration of Enrollment -->
+                                    <h6 style="padding: 10px 0px;"><i class="fas fa-calendar-alt"></i> September 2013 - February 2016</h6>
+
+                                </div>
 
 
                                 <!-- Add more institutions here -->
@@ -257,7 +256,7 @@
                                     <img class="card-img-top" src="assets/deadwood.jpeg" alt="Card image cap">
                                 </div><!-- Column 3 End -->
                             </div><!-- Row 2 End -->
-                            <hr >
+                            <hr>
                             <div class="row">
                                 <!-- Column 2 -->
                                 <!-- Project Title with technologies used -->
@@ -303,8 +302,7 @@
                         <div class="card-body">
                             <h3><i class="fas fa-envelope-open"></i> Get in touch!</h3>
                             <!-- Form start -->
-                            <form id="gform" method="POST" onsubmit="yourJsFunction();return false"  class="pure-form pure-form-stacked" data-email="from_email@example.com"
-                                  action="https://script.google.com/macros/s/AKfycbxSy49Tw6uJmK9ZbhuWGdSQmVPSH466ClUnZlyoU46XO6ufPMaT/exec">
+                            <form id="gform" method="POST" action="" class="pure-form pure-form-stacked" data-email="from_email@example.com">
                                 <!-- Row 2 -->
                                 <div class="row">
                                     <!-- Customer name -->
@@ -336,11 +334,11 @@
                                 <!-- Row 4 End -->
                                 <!-- Submit Button -->
                                 <button type="submit" class="btn btn-primary mb-2">Send</button>
-                              
+
                             </form><!-- Form end -->
                             <div style="display:none;" id="thankyou_message">
                                 <h2>
-                                    <em>Submitted!</em> 
+                                    <em>Submitted!</em>
                                 </h2>
                             </div>
                         </div><!-- Card 1 body end -->
@@ -397,14 +395,28 @@
     <!-- Particle effect canvas -->
     <canvas class="background"></canvas>
     <!-- Particle effect scripts -->
-    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
     <script src="js/particles.js"></script>
     <script type="text/javascript">
         window.onload = function () {
             Particles.init({
                 selector: '.background'
             });
-        };
+        }
+
+        $("#gform").submit(function (e) {
+            console.log("here");
+            e.preventDefault();
+            var form = $(this);
+            $.ajax({
+                type: "POST",
+                url: "https://script.google.com/macros/s/AKfycbxSy49Tw6uJmK9ZbhuWGdSQmVPSH466ClUnZlyoU46XO6ufPMaT/exec",
+                data: form.serialize(),
+                success: function (data) {
+                    yourJsFunction();
+                }
+            });
+            return false;
+        });
 
         function yourJsFunction() {
             console.log("submitted");
@@ -416,6 +428,8 @@
             }
         }
     </script>
+
+
 
 
 </body>
