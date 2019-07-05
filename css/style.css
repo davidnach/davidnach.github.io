@@ -30,6 +30,13 @@ Navbar styles
   transition: background-color 1s ease 0s;
 }
 /*Navbar brand i.e name that appears on top left*/
+.navbar-nav ml-auto{
+
+float:left;
+
+}
+
+
 .navbar .navbar-brand
 {
 	font-size: 30px;
@@ -47,7 +54,7 @@ Navbar styles
 /*Navbar active link style*/
 .navbar .navbar-nav .nav-link.active
 {
-  color: #ffc107;
+  color: #ff00ff;
 }
 /*Navbar link style on hover*/
 .navbar a:hover
@@ -73,6 +80,7 @@ Navbar styles
     color: #ffffff;
     font-size: 19px;
     padding: 10px;
+text-align: center;
     font-weight: 600;
     letter-spacing: 0.2rem;
 }
@@ -99,6 +107,7 @@ Navbar styles
 .navbar .navbar-collapse.collapse.show a
 {
 	color: black;
+	
 }
 /*Navbar active link style for responsive design*/
 .navbar .navbar-collapse.collapse.show .navbar-nav .nav-link.active
